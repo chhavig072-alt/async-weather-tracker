@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 15px;
+  color: #1e293b;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+.message {
+  min-height: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.message.error {
+  color: #dc2626;
+}
+
+.message.success {
+  color: #16a34a;
+}
+
+.weather-card,
+.history-card,
+.log-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.weather-card h2,
+.history-card h2,
+.log-card h2 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.weather-card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#historyList {
+  list-style: none;
+}
+
+#historyList li {
+  background: #e0f2fe;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#historyList li:hover {
+  background: #bae6fd;
+}
+
+#logBox {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 120px;
+  max-height: 220px;
+  overflow-y: auto;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
