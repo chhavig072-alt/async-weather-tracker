@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Async Weather Tracker</title>
+  <link rel="stylesheet" href="asy.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Async Weather Tracker</h1>
+    <p class="subtitle">Check live weather using Async JavaScript</p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name"
+        autocomplete="off"
+      />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div class="weather-card" id="weatherCard">
+      <h2>Weather Information</h2>
+      <p><strong>City:</strong> <span id="cityName">-</span></p>
+      <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+      <p><strong>Condition:</strong> <span id="condition">-</span></p>
+    </div>
+
+    <div class="history-card">
+      <h2>Recent Searches</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div class="log-card">
+      <h2>Execution Logs</h2>
+      <div id="logBox"></div>
+    </div>
+  </div>
+
+  <script src="asy.js"></script>
+</body>
+</html>
